@@ -10,16 +10,16 @@ const Header = ({
   goToContactTab,
 }) => {
   return (
-    <header className="text-white flex  justify-center fixed xl:absolute w-full bottom-10 ">
-      <ul className="list-none glass xl:bg-box-color flex justify-center items-center gap-6 w-full rounded-[35px] max-w-fit shadow-xl p-2">
+    <header className="text-white flex lg:flex-col justify-center fixed bottom-10 xl:bottom-6">
+      <ul className="list-none glass 2xl:bg-box-color flex  justify-center items-center p-2 px-4 2xl:px-6 gap-6 2xl:gap-10 2xl:p-2 w-full rounded-[35px] max-w-fit">
         <li
           onClick={goToMainDisplay}
-          className={`flex justify-center rounded-full p-3 ${
-            isMainDisplayOpen && "bg-white"
+          className={`flex justify-center rounded-full p-2 link ${
+            isMainDisplayOpen && ""
           }
            hover:cursor-pointer transition delay-100`}>
           <svg
-            className="h-6 w-6"
+            className="h-6 w-6 xl:h-5 xl:w-5 2xl:h-7 2xl:w-7"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512">
             <path
@@ -30,8 +30,8 @@ const Header = ({
         </li>
         <li
           onClick={goToAboutTab}
-          className={`flex justify-center rounded-full p-4 md:hidden ${
-            isAboutTabOpen && "bg-white"
+          className={`flex justify-center rounded-full p-2 md:hidden link ${
+            isAboutTabOpen && ""
           }
            hover:cursor-pointer transition delay-100`}>
           <svg
@@ -40,17 +40,17 @@ const Header = ({
             viewBox="0 0 448 512">
             <path
               d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"
-              fill={isAboutTabOpen ? "#151D28" : "#fff"}
+              fill={isAboutTabOpen ? "#06b6d4" : "#fff"}
             />
           </svg>
         </li>
         <li
           onClick={goToProjectsTab}
-          className={`flex justify-center rounded-full p-3 ${
-            isProjectTabOpen && "bg-white"
+          className={`flex justify-center rounded-full p-2 link ${
+            isProjectTabOpen && ""
           } hover:cursor-pointer transition delay-100`}>
           <svg
-            className="h-6 w-6"
+            className="h-6 w-6 xl:h-5 xl:w-5 2xl:h-7 2xl:w-7"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
             <path
@@ -61,12 +61,12 @@ const Header = ({
         </li>
         <li
           onClick={goToContactTab}
-          className={`flex justify-center rounded-full p-3 ${
-            isContactTab && "bg-white"
+          className={`flex justify-center rounded-full p-2 link ${
+            isContactTab && ""
           }
            hover:cursor-pointer transition delay-100`}>
           <svg
-            className="h-6 w-6"
+            className="h-6 w-6 xl:h-5 xl:w-5 2xl:h-7 2xl:w-7"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 512">
             <path

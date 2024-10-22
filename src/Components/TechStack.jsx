@@ -1,7 +1,7 @@
 import React from "react";
 
 const TechStack = ({
-  customTechStackClasses = "order-2 bg-box-color md:order-none md:technology flex gap-8 xl:col-span-4 xl:row-span-1  rounded-xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center shadow-2xl",
+  customTechStackClasses = "order-2 bg-box-color md:order-none md:technology flex gap-8 xl:col-span-4 xl:row-span-1  rounded-xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center",
 }) => {
   return (
     <section
@@ -13,8 +13,8 @@ const TechStack = ({
         aria-hidden="true"
         role="img"
         className="iconify iconify--logos flex-1"
-        width="60"
-        height="42"
+        width="30"
+        height="30"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 256 228">
         <path
@@ -25,8 +25,8 @@ const TechStack = ({
       <svg
         className="flex-1"
         fill="#fff"
-        width="60"
-        height="42"
+        width="30"
+        height="32"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve">
@@ -39,8 +39,8 @@ const TechStack = ({
 
       <svg
         className="flex-1"
-        width="60"
-        height="42"
+        width="30"
+        height="30"
         viewBox="0 0 256 263"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +92,8 @@ const TechStack = ({
 
       <svg
         className="flex-1"
-        width="42"
-        height="60"
+        width="30"
+        height="30"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg">
         <path

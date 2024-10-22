@@ -8,12 +8,13 @@ import ContactButton from "./ContactButton";
 import FrontMentorProfile from "./FrontMentorProfile";
 import Introduction from "./Introduction";
 import About from "./About";
+import Header from "./Header";
 
 const MainDisplay = ({ aboutText, goToContactTab }) => {
   const highlightedProject =
-    "md:hidden lg:block lg:mvp xl:col-span-2 xl:row-span-2 bg-box-color rounded-2xl relative p-2 ";
+    "md:hidden lg:block lg:mvp xl:col-span-2 xl:row-span-2 bg-box-color rounded-2xl relative ";
   return (
-    <section className="block h-full w-full md:grid md:h-full md:tablet-grid lg:laptop xl:grid-cols-9 xl:grid-rows-6 xl:gap-4 relative overflow-hidden md:overflow-auto">
+    <section className="block h-screen w-full md:grid md:h-full md:tablet-grid lg:laptop xl:grid-cols-9 xl:gap-2 relative overflow-hidden md:overflow-auto  xl:pt-10 xl:pb-20 2xl:pb-40">
       <Hero />
       <FrontMentorProfile highlightedProject={highlightedProject} />
       <Weather />

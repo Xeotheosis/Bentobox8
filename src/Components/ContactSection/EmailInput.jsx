@@ -1,11 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import SendMessage from "./SendMessage";
 
-const EmailInput = () => {
-  const notify = () => toast("🙌 Thank you for your message!");
+const EmailInput = ({ notify }) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -13,7 +10,6 @@ const EmailInput = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [showDialog, setShowDialog] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(true);
 
   const handleChange = (e) => {
@@ -58,7 +54,6 @@ const EmailInput = () => {
       .then(
         (result) => {
           setLoading(false);
-          setShowDialog(true);
           setForm({
             name: "",
             email: "",
@@ -73,13 +68,8 @@ const EmailInput = () => {
         }
       );
   };
-
-  const handleCloseDialog = () => {
-    setShowDialog(false);
-  };
-
   return (
-    <section className="order-2 lg:order-none bg-box-color p-4 md:message rounded-xl lg:col-span-5 lg:row-span-4 scale-up-center-third">
+    <section className="order-2 lg:order-none bg-box-color p-4 md:message rounded-xl lg:col-span-5 lg:row-span-4 scale-up-center-third xl:min-h-[28rem]">
       <form
         onSubmit={handleSubmit}
         className="flex flex-col text-white gap-5 h-full xl:p-4 xl:text-xl max-h-[18rem] md:max-h-none">
@@ -102,9 +92,7 @@ const EmailInput = () => {
         />
 
         {!isValidEmail && (
-          <p
-            className="text-align-left"
-            style={{ color: "red" }}>
+          <p className="text-align-left text-red-500">
             Please enter a valid email address.
           </p>
         )}
@@ -119,19 +107,6 @@ const EmailInput = () => {
         />
 
         <SendMessage loading={loading} />
-
-        <ToastContainer
-          position="top-center"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
       </form>
     </section>
   );

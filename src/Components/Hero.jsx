@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = ({
-  displaySettings = "h-full md:hero xl:col-span-3 xl:row-span-4 rounded-3xl",
+  displaySettings = "h-full md:hero xl:col-span-3 xl:row-span-4 rounded-3xl scale-up-center",
 }) => {
   return (
     <section className={displaySettings}>

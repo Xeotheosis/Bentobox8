@@ -13,36 +13,39 @@ import Galleria from "./Galleria";
 const Projects = ({ aboutText, goToContactTab }) => {
   const accordionItems = [
     {
-      source: "https://xeotheosis.github.io/Galleria-3/",
-      description: "Masonry layout with active tabs and attention to details",
+      title: "Threads",
+      source: "https://threads-clone-swart-rho.vercel.app/",
+      description: "NextJS / MongoDB / Clerk",
       content: <Galleria />,
     },
     {
+      title: "Coffeeroasters",
       source: "https://xeotheosis.github.io/CoffeeRoasters/",
       description:
         "Multiple page layout with order confirmation modal and routing",
       content: <CoffeeRoasters />,
     },
     {
+      title: "Tic Tac Toe",
       source: "https://xeotheosis.github.io/TicTacToe-3/",
       description: "Tic Tac Toe with Min-Max algorithm",
       content: <TicTacToe />,
     },
-    { description: "Soon", content: <Designo /> },
+    { title: "Designo", description: "Soon", content: <Designo /> },
   ];
 
   const customTechStackClasses =
-    "order-2 bg-box-color md:order-none md:technology flex gap-8 lg:col-span-4 lg:row-span-1  rounded-xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center shadow-2xl";
+    "order-2 bg-box-color md:order-none md:technology flex gap-8 lg:col-span-4 lg:row-span-1  rounded-xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center";
   const highlightedProject =
-    "hidden md:block md:mvp lg:col-span-2 lg:row-span-2 bg-box-color rounded-xl relative p-2 lg:hidden ";
+    "hidden md:block md:mvp lg:col-span-2 lg:row-span-2 bg-box-color rounded-xl relative lg:hidden ";
   const heroDisplaySettings =
     "hidden md:block h-full md:hero lg:col-span-3 lg:row-span-4 rounded-xl";
 
   const buttonDisplaySettings =
     "hidden md:contact lg:block lg:col-span-2 lg:row-span-1 bg-box-color rounded-xl scale-up-center-seventh card";
   return (
-    <section className="p-4 h-full flex flex-col gap-4 pt-10 pb-40 md:pb-0 md:pt-0 w-full md:grid md:h-full md:tablet-grid md:tablet-grid-projects lg:grid-cols-9 lg:grid-rows-6 lg:gap-4 relative lg:p-0">
-      <div className="hidden lg:col-span-9 lg:row-span-1 lg:p-0"></div>
+    <section className="p-4 h-full flex flex-col gap-4 pt-10 pb-40 md:pb-0 md:pt-0 w-full md:grid md:h-full md:tablet-grid md:tablet-grid-projects lg:grid-cols-9 lg:gap-2 relative lg:h-screen lg:p-0 lg:overflow-auto lg:pt-10 lg:pb-20 2xl:pb-40">
+      <div className="hidden lg:col-span-9 lg:row-span-1 lg:p-0 "></div>
       <Hero displaySettings={heroDisplaySettings} />
       <FrontMentorProfile highlightedProject={highlightedProject} />
       <Accordion items={accordionItems} />
@@ -53,7 +56,7 @@ const Projects = ({ aboutText, goToContactTab }) => {
       <TechStack customTechStackClasses={customTechStackClasses} />
       <ContactButton
         label={"Contact"}
-        goToContactTab={goToContactTab}
+        onClick={goToContactTab}
         displaySettings={buttonDisplaySettings}
       />
       <div className="hidden md:block md:empty md:p-20 md:h-full md:w-full lg:hidden"></div>

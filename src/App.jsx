@@ -6,6 +6,8 @@ import Projects from "./Components/Projects";
 import Header from "./Components/Header";
 import Contact from "./Components/ContactSection/Contact";
 import AboutSection from "./Components/AboutSection/AboutSection";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [isMainDisplayOpen, setMainDisplayOpen] = useState(true);
@@ -13,6 +15,8 @@ function App() {
   const [isContactTab, setContactTab] = useState(false);
   const [isAboutTabOpen, setAboutTabOpen] = useState(false);
   const [aboutText, setAboutText] = useState("Hi, I'm Andrei");
+
+  const notify = () => toast("Thank you for your message");
 
   const goToAboutTab = () => {
     setAboutTabOpen(true);
@@ -68,6 +72,7 @@ function App() {
       )}
       {isContactTab && (
         <Contact
+          notify={notify}
           isContactTab={isContactTab}
           aboutText={aboutText}
         />
@@ -81,6 +86,14 @@ function App() {
         isContactTab={isContactTab}
         isMainDisplayOpen={isMainDisplayOpen}
         isProjectTabOpen={isProjectTabOpen}
+      />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        rtl={false}
+        theme="dark"
       />
     </>
   );

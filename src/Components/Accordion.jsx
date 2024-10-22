@@ -9,7 +9,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <section className="p-2 bg-box-color rounded-xl flex flex-col lg:flex-row gap-4 w-full order-3 h-[40rem] lg:h-auto md:projects md:order-none lg:col-span-6 lg:row-span-4 lg:p-2">
+    <section className="p-2 rounded-xl flex flex-col lg:flex-row gap-4 w-full order-3 h-[40rem]  md:projects md:order-none lg:h-auto lg:min-h-[28rem] lg:col-span-6 lg:row-span-4 lg:p-2">
       {items.map((item, index) => (
         <AccordionPanel
           key={index}

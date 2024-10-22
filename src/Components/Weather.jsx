@@ -89,7 +89,7 @@ const Weather = () => {
               alt="Bucharest's Opera House"
             />
             <img
-              className="h-[8rem] md:h-40"
+              className="h-[6rem] 2xl:h-[8rem]"
               src={Wicon}
               alt="Weather Icon"
             />
@@ -100,10 +100,10 @@ const Weather = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <span className="text-white text-4xl lg:text-2xl xl:text-3xl font-bold   md:block poppins">
+            <span className="text-white text-4xl lg:text-2xl 2xl:text-3xl font-bold   md:block poppins">
               {weatherData.name}
             </span>
-            <span className="text-white text-4xl lg:text-2xl xl:text-3xl font-bold  md:block poppins">
+            <span className="text-white text-4xl lg:text-2xl 2xl:text-3xl font-bold  md:block poppins">
               {roundedTemperature} °
             </span>
           </div>

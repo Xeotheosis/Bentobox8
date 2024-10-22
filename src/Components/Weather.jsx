@@ -81,7 +81,7 @@ const Weather = () => {
   return (
     <>
       {weatherData && (
-        <div className="flex flex-col items-center justify-center  w-full bg-box-color rounded-3xl relative p-5  md:weather lg:col-span-2 lg:row-span-2 scale-up-center-second box-shadow-2xl">
+        <div className="flex flex-col items-center justify-center  w-full bg-box-color rounded-xl relative p-5  md:weather xl:col-span-2 xl:row-span-2 scale-up-center-second box-shadow-2xl">
           <div className="flex items-center">
             <img
               className="h-20 md:hidden"

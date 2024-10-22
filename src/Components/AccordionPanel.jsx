@@ -11,7 +11,7 @@ const AccordionPanel = ({
     <div
       style={{ animationDelay: `${delay}s` }}
       onClick={() => onToggle(index)}
-      className={`relative isolate overflow-hidden rounded-3xl transition-all delay-100 cursor-pointer md:p-4 scale-up-center ${
+      className={`relative isolate overflow-hidden rounded-xl transition-all delay-100 cursor-pointer md:p-4 scale-up-center ${
         isActive ? "flex-1" : ""
       }`}>
       <div
@@ -30,7 +30,7 @@ const AccordionPanel = ({
         aria-hidden={!isActive}>
         {content}
 
-        <div className="absolute  p-4 h-full w-full inset-0 rounded-2xl flex flex-col items-center justify-center shadow-box">
+        <div className="absolute  p-4 h-full w-full inset-0 rounded-xl flex flex-col items-center justify-center shadow-box">
           {isActive && (
             <>
               <a

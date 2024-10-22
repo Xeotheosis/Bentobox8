@@ -20,7 +20,7 @@ const Contact = ({ aboutText }) => {
       <Socials customSocialClasses={socialCustomClasses} />
       <About
         aboutText={aboutText}
-        customAboutClasses="hidden md:block"
+        customAboutClasses="hidden md:block lg:col-span-3 lg:row-span-1"
       />
       <ThankYou />
       <div className="hidden md:block md:h-full md:w-full md:p-20 lg:hidden"></div>

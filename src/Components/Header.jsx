@@ -11,7 +11,7 @@ const Header = ({
 }) => {
   return (
     <header className="text-white flex  justify-center fixed xl:absolute w-full bottom-10 ">
-      <ul className="list-none glass lg:bg-box-color flex justify-center items-center gap-6 w-full rounded-[35px] max-w-fit shadow-xl p-2">
+      <ul className="list-none glass xl:bg-box-color flex justify-center items-center gap-6 w-full rounded-[35px] max-w-fit shadow-xl p-2">
         <li
           onClick={goToMainDisplay}
           className={`flex justify-center rounded-full p-3 ${

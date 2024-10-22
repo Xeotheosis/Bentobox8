@@ -11,22 +11,25 @@ import About from "./About";
 
 const MainDisplay = ({ aboutText, goToContactTab }) => {
   const highlightedProject =
-    "md:hidden lg:block lg:col-span-2 lg:row-span-2 bg-box-color rounded-2xl relative p-2 ";
+    "md:hidden lg:block lg:mvp xl:col-span-2 xl:row-span-2 bg-box-color rounded-2xl relative p-2 ";
   return (
-    <section className="block h-full w-full md:grid md:h-full md:tablet-grid lg:grid-cols-9 lg:grid-rows-6 lg:gap-4 relative overflow-hidden">
+    <section className="block h-full w-full md:grid md:h-full md:tablet-grid lg:laptop xl:grid-cols-9 xl:grid-rows-6 xl:gap-4 relative overflow-hidden md:overflow-auto">
       <Hero />
       <FrontMentorProfile highlightedProject={highlightedProject} />
       <Weather />
       <Socials />
       <Introduction />
       <Timeline />
-      <About aboutText={aboutText} />
+      <About
+        aboutText={aboutText}
+        customAboutClasses="hidden md:block xl:col-span-3 xl:row-span-1"
+      />
       <TechStack />
       <ContactButton
         onClick={goToContactTab}
         label="Contact"
       />
-      <div className="hidden md:block md:empty md:h-full md:w-full md:p-20 lg:hidden"></div>
+      <div className="hidden md:block md:empty md:h-full md:w-full md:p-20 xl:hidden"></div>
     </section>
   );
 };

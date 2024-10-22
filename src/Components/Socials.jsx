@@ -1,7 +1,7 @@
 import React from "react";
 
 const Socials = ({
-  customSocialClasses = "rounded-xl gap-2 grid grid-cols-2 grid-rows-2 md:socials lg:col-span-2 lg:row-span-2",
+  customSocialClasses = "rounded-xl gap-2 grid grid-cols-2 grid-rows-2 md:socials xl:col-span-2 xl:row-span-2",
 }) => {
   return (
     <section className={customSocialClasses}>
@@ -9,7 +9,7 @@ const Socials = ({
         href="https://www.instagram.com/andrei.neacsu98/"
         target="_blank"
         rel="noreferrer"
-        className="bg-box-color flex-1 h-20 rounded-xl md:h-full w-full flex p-4 lg:p-0 lg:rounded-3xl justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card">
+        className="bg-box-color flex-1 h-20 rounded-xl md:h-full w-full flex p-4 lg:p-0  justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card">
         <svg
           className="h-14"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const Socials = ({
         href="https://discordapp.com/users/556916188446457866"
         target="_blank"
         rel="noreferrer"
-        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0 lg:rounded-3xl justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
+        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0  justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
         style={{ animationDelay: "0.7s" }}>
         <svg
           className="h-10"
@@ -34,7 +34,7 @@ const Socials = ({
         href="https://www.linkedin.com/in/andrei-neacsu-935129196/"
         target="_blank"
         rel="noreferrer"
-        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0 lg:rounded-3xl justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
+        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0  justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
         style={{ animationDelay: "0.8s" }}>
         <svg
           className="h-12"
@@ -47,7 +47,7 @@ const Socials = ({
         href="https://github.com/Xeotheosis"
         target="_blank"
         rel="noreferrer"
-        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0 lg:rounded-3xl justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
+        className="bg-box-color rounded-xl flex-1 h-20 w-full md:h-full flex p-4 lg:p-0  justify-center items-center hover:cursor-pointer fill-white scale-up-center-fifth card"
         style={{ animationDelay: "0.9s" }}>
         <svg
           className="h-10"

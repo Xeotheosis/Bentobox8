@@ -79,7 +79,7 @@ const EmailInput = () => {
   };
 
   return (
-    <section className="order-2 lg:order-none bg-box-color p-4 md:message rounded-3xl col-span-5 row-span-4 scale-up-center-third">
+    <section className="order-2 lg:order-none bg-box-color p-4 md:message rounded-xl lg:col-span-5 lg:row-span-4 scale-up-center-third">
       <form
         onSubmit={handleSubmit}
         className="flex flex-col text-white gap-5 h-full xl:p-4 xl:text-xl max-h-[18rem] md:max-h-none">

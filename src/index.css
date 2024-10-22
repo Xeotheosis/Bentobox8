@@ -20,7 +20,10 @@ html{
 
 
 
-@layer components{
+@layer components{ 
+  
+ 
+
   .glass-white{
     background: rgba(14, 14, 14, 0.93); /* Adjust opacity as needed */
     backdrop-filter: blur(10px); /* Apply the blur effect */
@@ -91,47 +94,11 @@ html{
 			);
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .tablet-grid-contact {
-    display: grid; 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 1rem;
-    grid-template-areas:
-      "hero socials"
-      "hero about"
-      "hero thankyou"
-      "message message"
-      "empty empty";
-  }
-  .message{
-    grid-area:message;
-  }
-  .thankyou{
-    grid-area:thankyou;
-  }
-  .tablet-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    grid-gap:1rem;
-    grid-template-areas:
-    "hero weather"
-    "hero about"
-    "hero timeline"
-    "introduction introduction"
-    "technology technology"
-    "socials contact"
-    "empty empty"
-  }
-  .tablet-grid-projects{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    grid-gap:1rem;
-    grid-template-areas:
-    "hero mvp"
-    "hero about"
-    "hero technology"
-    "projects projects"
-    "empty empty"
-  }
+.message{
+  grid-area:message;
+}
+.thankyou{
+  grid-area:thankyou;
 }
 .hero{
   grid-area:hero;
@@ -175,6 +142,43 @@ html{
 .signature{
   font-family: 'Playwrite DE LA', cursive;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .tablet-grid-contact {
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+    grid-template-areas:
+      "hero socials"
+      "hero about"
+      "hero thankyou"
+      "message message"
+      "empty empty";
+  }
+ 
+  .tablet-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-gap:1rem;
+    grid-template-areas:
+    "hero weather"
+    "hero about"
+    "hero timeline"
+    "introduction introduction"
+    "technology technology"
+    "socials contact"
+    "empty empty"
+  }
+  .tablet-grid-projects{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-gap:1rem;
+    grid-template-areas:
+    "hero mvp"
+    "hero about"
+    "hero technology"
+    "projects projects"
+    "empty empty"
+  }
+}
+
 
 .scale-up-center {
 	-webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -246,7 +250,7 @@ html{
 }
 .card:after {  
   content: "";
-  height: 70px;
+  height: 50px;
   width: 1px;  
   position: absolute;  
   left: -1px;
@@ -322,5 +326,17 @@ html{
             transform: translateZ(160px);
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+.laptop {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-gap:1rem;
+  grid-template-areas:
+  "hero weather mvp"
+  "hero about timeline"
+  "introduction introduction socials"
+  "technology technology contact"
+  "empty empty empty"
 
+}
+}
 }

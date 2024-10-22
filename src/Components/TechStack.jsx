@@ -1,9 +1,11 @@
 import React from "react";
 
-const TechStack = () => {
+const TechStack = ({
+  customTechStackClasses = "order-2 bg-box-color md:order-none md:technology flex gap-8 xl:col-span-4 xl:row-span-1  rounded-xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center shadow-2xl",
+}) => {
   return (
     <section
-      className="order-2 bg-box-color md:order-none md:technology flex gap-8 lg:col-span-4 lg:row-span-1  rounded-3xl lg:flex-wrap items-center lg:gap-3 p-4 justify-around scale-up-center shadow-2xl"
+      className={customTechStackClasses}
       style={{ animationDelay: "0.4s" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"

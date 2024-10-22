@@ -11,7 +11,7 @@ const TicTacToe = () => {
           alt="Tic Tac Toe"
         />
       </div>
-      <div className="absolute p-4 h-full w-full top-0 rounded-2xl flex items-center justify-center opacity-100"></div>
+      <div className="absolute p-4 h-full w-full top-0 rounded-xl flex items-center justify-center opacity-100"></div>
     </>
   );
 };

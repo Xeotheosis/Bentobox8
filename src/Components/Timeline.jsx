@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <section className="md:timeline-container bg-box-color rounded-3xl lg:col-span-2 lg:row-span-2 scale-up-center-sixth">
+    <section className="md:timeline-container bg-box-color rounded-xl xl:col-span-2 xl:row-span-2 scale-up-center-sixth">
       <div className="timeline">
         <div className="bg-white p-2 first-message rounded-r-xl flex flex-col self-start px-3 w-full max-w-[7.5rem]">
           <p className="font-bold text-base lg:text-xs xl:text-base">

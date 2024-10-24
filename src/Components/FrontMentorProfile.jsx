@@ -1,5 +1,5 @@
 import React from "react";
-import GalleriaCover from "../assets/Threads.webp";
+import GalleriaCover from "../assets/ThreadsPhone.webp";
 
 const FrontMentorProfile = ({
   highlightedProject = "md:mvp lg:block xl:col-span-2 xl:row-span-2 bg-box-color  rounded-xl relative p-2",
@@ -8,7 +8,7 @@ const FrontMentorProfile = ({
     <section className={highlightedProject}>
       <div className="flex justify-center items-center h-full scale-up-center-second">
         <img
-          className="rounded-xl h-full object-scale-down"
+          className="rounded-xl h-full object-cover aspect-square w-fit"
           src={GalleriaCover}
           alt="highlighted project"
         />

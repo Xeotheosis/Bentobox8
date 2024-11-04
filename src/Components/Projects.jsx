@@ -15,14 +15,13 @@ const Projects = ({ aboutText, goToContactTab }) => {
     {
       title: "Threads",
       source: "https://threads-clone-swart-rho.vercel.app/",
-      description: "NextJS / MongoDB / Clerk",
+      description: "Fullstack Threads/Twitter Clone",
       content: <Galleria />,
     },
     {
-      title: "Coffeeroasters",
-      source: "https://xeotheosis.github.io/CoffeeRoasters/",
-      description:
-        "Multiple page layout with order confirmation modal and routing",
+      title: "Carepulse",
+      source: "https://carepulse-eight-zeta.vercel.app/",
+      description: "FullStack Appointments Management App",
       content: <CoffeeRoasters />,
     },
     {

@@ -1,5 +1,5 @@
 import React from "react";
-import CoffeeRoastersCover from "./projectCovers/CoffeeRoasters.webp";
+import CarepulseCover from "./projectCovers/Carepulse.webp";
 
 const CoffeeRoasters = () => {
   return (
@@ -7,7 +7,7 @@ const CoffeeRoasters = () => {
       <div className="flex justify-center items-center h-full">
         <img
           className="max-w-full block absolute inset-0 object-cover w-full h-full -z-10"
-          src={CoffeeRoastersCover}
+          src={CarepulseCover}
           alt="highlighted project"
         />
       </div>
